@@ -14,11 +14,11 @@
 		var scm=document.querySelector('.score-m');
 		var ref = new Firebase("https://offkpls.firebaseio.com/");
 		var cou = new Firebase("https://offkpls.firebaseio.com/count/");
-		
 
+
+		
 		cou.on('child_added', function(snapshot) {
-			var message = snapshot.val();  
-			console.log(message);       
+			var message = snapshot.val();        
 			displayData(message);
 		});
 
@@ -38,23 +38,16 @@
 
 
 
-
-
  function addOne(){
  	var val;
  	cou.on("value", function(snapshot) {
  		val=snapshot.val();
  		val=val.val;
  		val++;
- 		sc.innerHTML=val;
- 		scm=innerHTML=val;
  	}, function (errorObject) {
  		console.log("The read failed: " + errorObject.code);
  	});
-
-
  	cou.set({val});
-
  }
 
 
@@ -64,10 +57,7 @@
  	if(this.checked) {
  		ad.style.display="block";
  		ad.className=" textarea animated pulse check-address";
- 		
  	}
-
-
  	else {
 
  		ad.style.display="none";
@@ -117,7 +107,7 @@ function validate(){
 			addOne();
 			ms.className="paddout animated tada";
 			ms.innerHTML="Sent Sucessfully!";
-			ref.push({Name:Fna,Mobile:Fnu,Address:Fad});
+			ref.push({Name:Fna,Mobile:Fnu,Address:Fad,timestamp:Firebase.ServerValue.TIMESTAMP});
 		}
 
 	}
@@ -125,7 +115,7 @@ function validate(){
 		addOne();
 		ms.className="animated tada";
 		ms.innerHTML="Sent Sucessfully!";
-		ref.push({Name:Fna,Mobile:Fnu});
+		ref.push({Name:Fna,Mobile:Fnu,timestamp:Firebase.ServerValue.TIMESTAMP});
 		
 
 	}

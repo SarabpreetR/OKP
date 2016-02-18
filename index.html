@@ -117,7 +117,7 @@
             <div class="dark">  <h3>off why?</h3>
               <p>
 
-              18 mins of idling per vehicle causes 37 Kgs of CO<sub>2</sub> emissions adding to more pollution.
+              18 minutes of idling per vehicle causes 37 Kgs of CO<sub>2</sub> emissions yearly. ACT NOW.
               </p></div>
             </div>
             <div class="col-lg-4 col-xs-12">
@@ -127,18 +127,105 @@
             </div>
             <!-- off-what-why block ends-->
 
+  <!-- Calculator block starts here.. -->
+
+
+
+<div class="row Calculator">
+  <h1 class="big blue" >Find out how much you can save!</h1>
+<div class="row vehicle highlight-on  ">
+ <h2>Chose vehicle type:</h2>
+ <div class="col-lg-4 ">
+<div class="car-button two-wheeler selected" vehicle-type="2">
+   
+    <img src="img/button/2wheel.png" alt="">
+    <p class="auto-detail">2 wheeler</p>
+  </div>
+</div>
+
+
+    <div class="col-lg-4">
+      <div class="car-button C1400cc unselected" vehicle-type="14">
+  <img src="img/button/car.png" alt="">
+    <p class="auto-detail">4 wheeler Less Than 1400cc</p>
+  
+  </div>
+
+  </div>
+
+    <div class="col-lg-4">
+    <div class="car-button C1400cc-plus unselected"  vehicle-type="15">
+  <img src="img/button/car-big.png" alt="">
+
+    <p class="auto-detail">4 wheeler more than 1400cc </p>
+   
+  </div>
+
+</div>
+</div>
+<!-- first section  -->
 
 
 
 
-
-
-
+<div class="row idling highlight-off">
+  <h2>
+  Choose Idling time in a day:</h2>
+  
+<ul>
+  
+  <li class="col-lg-2  col-xs-4">
+      <input type="radio" name="time" id="5">
+      <p class="detail-time"><label for="5">5min</label></p>
+    </li>
+    <li class="col-lg-2 col-xs-4">
+      <input type="radio" name="time" id="10">
+      <p class="detail-time"><label for="10">10min</label></p>
+    </li>
+    <li class="col-lg-2 col-xs-4">
+ <input type="radio" name="time" id="15">
+      <p class="detail-time"><label for="15">15min</label></p>
+    </li>
+    <li class="col-lg-2 col-xs-4">
+       <input type="radio" name="time" id="20">
+      <p class="detail-time"><label for="20">20min</label></p>
+    </li>
+    <li class="col-lg-2 col-xs-4">
+      <input type="radio" name="time" id="25">
+      <p class="detail-time"><label for="25">25min</label></p>
+    </li>
+    <li class="col-lg-2 col-xs-4">
+      <input type="radio" name="time" id="30">
  
+      <p class="detail-time" for="time"><label for="30">30min</label></p>
+    </li>  
+</ul>
 
 
 
+  <div class="border-center"></div>
 
+
+
+</div>
+
+<!-- second section -->
+
+
+
+<div class="row result highlight-off">
+<div class="col-lg-6 col-xs-6 text-center">
+<h3>CO <sub>2</sub> saved per year </h3>
+<h4 class="big-cal-font gram">0g</h4>
+</div>
+
+<div class="col-lg-6 text-center col-xs-6 right-border">
+<h3>Fuel saved per year</h3>
+<h4 class="big-cal-font liter">0lt</h4>
+</div>
+
+</div>
+</div>
 
 
 
@@ -173,10 +260,7 @@
               </div>
             </div>
             <!-- CTA PLEDGE BOX -->
-            <!-- Calculator block starts here.. -->
-
-
-
+          
 
 
 
@@ -230,14 +314,12 @@
             <!-- main container ends here -->
           </div>
           <!-- DEVELOPMENT SCRIPTS REMOVE FOR LIVE VERSION -->
-    
-
-
-
-
-
-
     <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+
+
+
+
 
     
           <!-- DEVELOPMENT SCRIPT ENDS HERE -->
@@ -246,6 +328,7 @@
           <script src="https://cdn.firebase.com/js/client/2.4.0/firebase.js"></script>
           <script src="js/smooth-scroll.js"></script>
           <script src="js/custom.js"></script>
+          <script src="js/calc.js"></script>
           <!-- Include all compiled plugins (below), or include individual files as needed -->
           <script src="js/bootstrap.min.js"></script>
         </body>
